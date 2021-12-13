@@ -6,11 +6,12 @@ import Home from "./pages/Home";
 import SingUp from "./pages/SingUp";
 import Profile from "./pages/Profile";
 import Paypal from "./pages/Paypal";
-import styled from "styled-components";
+import { makeStyles } from "@material-ui/core";
 
-const useStyles = styled((theme) => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: "#111",
+    color: "#f5f5f5",
+    backgroundColor: "#050505",
     minHeight: "100vh",
   },
 }));
@@ -23,8 +24,9 @@ function App() {
     <div className={classes.root}>
       <BrowserRouter>
         {!user ? (
+          // <Login />
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
           </Routes>
         ) : (
           <Routes>
