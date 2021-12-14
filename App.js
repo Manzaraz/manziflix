@@ -1,13 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Counter } from "./features/counter/Counter";
-// import classes from "./App.module.scss";
+import { makeStyles } from "@material-ui/core";
+
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-import SingUp from "./pages/SingUp";
 import Profile from "./pages/Profile";
 import Paypal from "./pages/Paypal";
-import { makeStyles } from "@material-ui/core";
-import Header from "./components/Header";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,15 +15,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  const user = "Chris";
+  const user = "null";
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      {/* <Header /> */}
       <BrowserRouter>
         {!user ? (
-          // <Login />
           <Routes>
             <Route path="/" element={<Login />} />
           </Routes>

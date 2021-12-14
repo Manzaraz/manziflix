@@ -6,7 +6,7 @@ import {
   Toolbar,
 } from "@material-ui/core";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/manziflixLogo.png";
 
 const useStyles = makeStyles((theme) => ({

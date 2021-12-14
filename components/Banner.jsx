@@ -10,12 +10,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     backgroundPosition: "center",
     color: "#fff",
+    display: "flex",
+    justifyContent: "left",
+    alignItems: "flex-end",
   },
   container: {
-    // // position: "absolute",
-    // display: "flex",
-    // flexDirection: "column",
-    // justifyContent: "flex-end",
+    bottom: "-20px",
   },
   buttons: {
     padding: theme.spacing(1),
@@ -33,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#e6e6e6",
     },
   },
-  description: {},
+  description: {
+    width: "50vw",
+    fontWeight: 200,
+    padding: "20px",
+  },
   fadeBottom: {
     position: "absolute",
     top: "30vh",
