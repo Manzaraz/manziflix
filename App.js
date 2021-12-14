@@ -12,7 +12,7 @@ import Header from "./components/Header";
 const useStyles = makeStyles((theme) => ({
   root: {
     color: "#f5f5f5",
-    backgroundColor: "#050505",
+    backgroundColor: "#000",
     minHeight: "100vh",
   },
 }));
