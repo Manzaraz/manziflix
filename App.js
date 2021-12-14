@@ -7,6 +7,7 @@ import SingUp from "./pages/SingUp";
 import Profile from "./pages/Profile";
 import Paypal from "./pages/Paypal";
 import { makeStyles } from "@material-ui/core";
+import Header from "./components/Header";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,11 +18,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  const user = null;
+  const user = "Chris";
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
+      {/* <Header /> */}
       <BrowserRouter>
         {!user ? (
           // <Login />
