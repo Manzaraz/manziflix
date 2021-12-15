@@ -1,44 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Inicializcion del proyecto:
 
-## Available Scripts
+`npx create-react-app manziflix --template redux`
 
-In the project directory, you can run:
+### Proceso de limpieza.
 
-### `yarn start`
+### Importar las librerias
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+@mui/material styled-components firebase, react-router-dom, react-uuid, axios
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### App.js - layout inicial
 
-### `yarn test`
+    - Creamos las rutas mediante react-router-dom
+    - Renderizamos Login o el resto de la app condicionada a la existencia del usuario
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Estilos
 
-### `yarn build`
+    - Usamos el Hook de MU, useStyles, para crear una infraestructura que nos permita asignar estilos a cada uno de los componentes
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Crear las carpetas de los componentes: componentes & pages
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+    - Creamos la infraestructura báscia de los componentes de /pages: Home, Login, Paypal, Profile, SignUp.
+    - Creamos la infraestructura báscia de los componentes de /components: Banner, Header, Plans, Row.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Estilos en los componentes de /pages
 
-### `yarn eject`
+    - Patrón para añadir la infraestrucutra de estilos a todos los components de /pages
+    - Patrón para añadir la infraestrucutra de estilos a todos los components de /components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Trabajando con el Header
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - Importamos el Logo
+    - Añadimos al AppBar una clase transparente dinámica mediante el estado de la variable Show (la cual depende del scroll vertical)
+    - Añadimos las rutas a Logo y al Avatar
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Trabajando con el Banner
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    - Se importó una imagen como backgroundImage.
+    - En React, tenemos que acompañar las backgroundImages con estilos como object-fit, bgSize y bgPosition.
+    - Posicioné el titulo de la película, con botones y descripción.
+    - A la descripción, como viene de api tenemos que truncarla  para asegurar que quepa en el espacio asigando con truncate.
+    - Añadí un div vacio para oscurecer la imagen hasata fusionarla con el resto de la UI, que es oscuro.
 
-## Learn More
+### Trabajamos con el Login
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Se creó un botón con Styled-Components "FlixBtn", el cual está customizado para variar longitud, color y otros estilos pasándole props...
+    - Styled-Components para variar los estilos del Input o del Botón, pero par su pocionamiento, le damos una clase normal.
+    - Se creó un Input personalizado con Styled-Componets "FlixInput", el cual ya era un componente de Mui de InputBase.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Trabajando con el pages/Profile
+
+    - Trabajamos con la distribución
+    - <Plans>Texto</Plans>
+        `const Plans = ({children}) => return(...)`
+    - Paso props {color, size, radius} condicionales al <FlixBtn>
