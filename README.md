@@ -53,3 +53,7 @@
     - <Plans>Texto</Plans>
         `const Plans = ({children}) => return(...)`
     - Paso props {color, size, radius} condicionales al <FlixBtn>
+
+### Trabajando en el pages/SignUp
+
+    - Renderizado condicional con signIn, de ser falsa desplegamos el formulario

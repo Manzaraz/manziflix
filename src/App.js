@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function App() {
-  const user = "null";
+  const user = null;
   const classes = useStyles();
 
   return (
