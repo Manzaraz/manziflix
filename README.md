@@ -57,3 +57,10 @@
 ### Trabajando en el pages/SignUp
 
     - Renderizado condicional con signIn, de ser falsa desplegamos el formulario
+
+### Proceso de SignIn/SignUp
+
+    • Habilité una cuenta de Firebase.
+    • Inicializado el objeto auth()
+    • signUp email y password
+    • signIn email y password
