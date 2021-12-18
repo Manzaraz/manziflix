@@ -5,6 +5,7 @@ import SignUp from "../pages/SingUp";
 import logo from "../assets/manziflixLogo.png";
 import bgimage from "../assets/moviebg.png";
 import { FlixBtn, FlixInput } from "../styled/styledComponents";
+import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {

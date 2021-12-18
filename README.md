@@ -64,3 +64,12 @@
     • Inicializado el objeto auth()
     • signUp email y password
     • signIn email y password
+
+### Redux
+
+    • Habilitamos el slice userSlice para manejar el usuario en el componente que lo solicite.
+
+### Persistencia
+
+    - Se añadió un eventListener en App, el cual trae el objeto auth de firebase, el que escuchará cada vez que cambia entonces vuelve a inyectar el usuario en la capa de datos de userSlice de redux
+    - De esta manera recordamos a la app que ya estamos adentro aunque refresquemos la pagina

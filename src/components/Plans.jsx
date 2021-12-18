@@ -20,12 +20,22 @@ const useStyles = makeStyles((theme) => ({
 const Plans = ({ cost, children, color, wide }) => {
   const classes = useStyles();
 
+  const handleSuscribe = (e) => {
+    console.log(`${e.target.value} manejando el botón suscribe`);
+  };
+
   return (
     <div className={classes.root}>
       <Typography className={classes.standard} variant="h5">
         {children}
       </Typography>
-      <FlixBtn cost={cost} color={color} wide={wide} radius>
+      <FlixBtn
+        onClick={handleSuscribe}
+        cost={cost}
+        color={color}
+        wide={wide}
+        radius
+      >
         Suscribe
       </FlixBtn>
     </div>

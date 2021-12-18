@@ -4,6 +4,10 @@ import Plans from "../components/Plans";
 import avatar from "../assets/avatar.png";
 import { FlixBtn } from "../styled/styledComponents";
 
+import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     color: "#fff",
@@ -44,6 +48,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Profile = () => {
   const classes = useStyles();
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    signOut(auth);
+    navigate("/login");
+  };
 
   return (
     <div className={classes.root}>
@@ -54,7 +64,7 @@ const Profile = () => {
           <img src={avatar} alt="avatar" />
           <div className={classes.details}>
             <div className={classes.plans}>
-              <Typography variant="h6">email usuario</Typography>
+              <Typography variant="h6">email usuario{}</Typography>
               <Typography
                 variant="h5"
                 gutterBottom
@@ -67,7 +77,9 @@ const Profile = () => {
               <Plans cost={9.99} color="gray" wide="medium">
                 Manziflix Premium
               </Plans>
-              <FlixBtn wide="fullWith">Sign Out</FlixBtn>
+              <FlixBtn onClick={handleSignOut} wide="fullWith">
+                Sign Out
+              </FlixBtn>
             </div>
           </div>
         </div>

@@ -10,7 +10,8 @@ const handleWidth = (wide) => WITH_SIZE[wide] || WITH_DEFAULT;
 
 export const FlixBtn = styled.button`
   z-index: 15;
-  background-color: ${({ color }) => (color === "gray" ? "lightgray" : "red")};
+  background-color: ${({ color }) =>
+    color === "gray" ? "lightgray" : "#DC1B27"};
   color: #fff;
   border-radius: ${({ radius }) => (radius ? "5px" : null)};
   text-transform: inherit;
