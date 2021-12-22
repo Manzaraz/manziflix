@@ -2,7 +2,7 @@
   "name": "manziflix",
   "version": "0.1.0",
   "private": true,
-  "homepage": "manzaraz.github.io/manziflix/",
+  "homepage": "https://manzaraz.github.io/manziflix/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@reduxjs/toolkit": "^1.7.1",
