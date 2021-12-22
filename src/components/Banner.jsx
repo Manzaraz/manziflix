@@ -53,18 +53,17 @@ const Banner = () => {
     string?.length > n ? `${string.substr(0, n - 1)}...` : string;
 
   useEffect(() => {
-    const getMovies = async () => {
+    const getMovie = async () => {
       let res = await fetch(request.fetchNetflixOriginals),
         json = await res.json(),
         movies = json.results;
       // Tenemos un array de peliculas  en movies. Generamos un número random entre 0 y la laongitud del Array, para obtener un idice aleatorio
       const random = Math.floor(Math.random() * movies.length - 1);
-
       setMovie(movies[random]);
     };
-    getMovies();
+    getMovie();
   }, []);
-  console.log(movie);
+  // console.log(movie);
 
   let base_url = "https://image.tmdb.org/t/p/original";
 
