@@ -72,4 +72,10 @@
 ### Persistencia
 
     - Se añadió un eventListener en App, el cual trae el objeto auth de firebase, el que escuchará cada vez que cambia entonces vuelve a inyectar el usuario en la capa de datos de userSlice de redux
-    - De esta manera recordamos a la app que ya estamos adentro aunque refresquemos la pagina
+    - De esta manera recordamos a la app que ya estamos adentro aunque refresquemos la página
+
+### Requests
+
+    - Con axios nos conectamos a los endpoints para conectarnos al API de TMDB.
+    - Creamos Requests para construir todos los endpoints para obtener la data con su API_KEY
+    - Construir el componente Row

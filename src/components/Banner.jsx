@@ -1,13 +1,11 @@
 import { Button, makeStyles, Typography } from "@material-ui/core";
-import heroBanner from "../assets/banner.jpg";
+import { useEffect, useState } from "react";
+import request from "../Requests";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `url(${heroBanner})`,
     position: "relative",
     height: "440px",
-    objectFit: "contain",
-    backgroundSize: "cover",
     backgroundPosition: "center",
     color: "#fff",
     display: "flex",
@@ -16,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {},
   buttons: {
-    padding: theme.spacing(1),
     "& button": {
       cursor: "pointer",
       color: "#fff",
@@ -50,15 +47,39 @@ const useStyles = makeStyles((theme) => ({
 
 const Banner = () => {
   const classes = useStyles();
+  const [movie, setMovie] = useState([]);
 
   const truncate = (string, n) =>
     string?.length > n ? `${string.substr(0, n - 1)}...` : string;
 
+  useEffect(() => {
+    const getMovies = async () => {
+      let res = await fetch(request.fetchNetflixOriginals),
+        json = await res.json(),
+        movies = json.results;
+      // Tenemos un array de peliculas  en movies. Generamos un número random entre 0 y la laongitud del Array, para obtener un idice aleatorio
+      const random = Math.floor(Math.random() * movies.length - 1);
+
+      setMovie(movies[random]);
+    };
+    getMovies();
+  }, []);
+  console.log(movie);
+
+  let base_url = "https://image.tmdb.org/t/p/original";
+
   return (
-    <div className={classes.root}>
+    <div
+      className={classes.root}
+      style={{
+        backgroundImage: `url(${base_url}${movie?.backdrop_path})`,
+        objectFit: "contain",
+        backgroundSize: "cover",
+      }}
+    >
       <div className={classes.container}>
         <Typography variant="h2" component="h1">
-          Movie Title
+          {movie.name}
         </Typography>
         <div className={classes.buttons}>
           <Button>Play</Button>
@@ -69,10 +90,7 @@ const Banner = () => {
           variant="h6"
           className={classes.description}
         >
-          {truncate(
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolorum error eligendi ipsa voluptatibus facere laudantium, quae iusto nesciunt voluptas qui necessitatibus deserunt tenetur vero excepturi in accusantium fugiat. Debitis.",
-            155
-          )}
+          {truncate(movie.overview, 155)}
         </Typography>
         <div className={classes.fadeBottom} />
       </div>

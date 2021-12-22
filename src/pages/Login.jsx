@@ -5,7 +5,6 @@ import SignUp from "../pages/SingUp";
 import logo from "../assets/manziflixLogo.png";
 import bgimage from "../assets/moviebg.png";
 import { FlixBtn, FlixInput } from "../styled/styledComponents";
-import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Login = () => {
   const classes = useStyles();
-  const [signIn, setSignIn] = useState(false);
+  const [signIn /*, setSignIn*/] = useState(false);
 
   return (
     <div className={classes.root}>
