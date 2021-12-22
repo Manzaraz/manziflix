@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/manzaraz.github.io/manziflix/static/css/main.54b8ac72.chunk.css",
-    "main.js": "/manzaraz.github.io/manziflix/static/js/main.fc9bdb1d.chunk.js",
-    "main.js.map": "/manzaraz.github.io/manziflix/static/js/main.fc9bdb1d.chunk.js.map",
-    "runtime-main.js": "/manzaraz.github.io/manziflix/static/js/runtime-main.25527866.js",
-    "runtime-main.js.map": "/manzaraz.github.io/manziflix/static/js/runtime-main.25527866.js.map",
-    "static/js/2.59808457.chunk.js": "/manzaraz.github.io/manziflix/static/js/2.59808457.chunk.js",
-    "static/js/2.59808457.chunk.js.map": "/manzaraz.github.io/manziflix/static/js/2.59808457.chunk.js.map",
-    "index.html": "/manzaraz.github.io/manziflix/index.html",
-    "static/css/main.54b8ac72.chunk.css.map": "/manzaraz.github.io/manziflix/static/css/main.54b8ac72.chunk.css.map",
-    "static/js/2.59808457.chunk.js.LICENSE.txt": "/manzaraz.github.io/manziflix/static/js/2.59808457.chunk.js.LICENSE.txt",
-    "static/media/manziflixLogo.9cd06238.png": "/manzaraz.github.io/manziflix/static/media/manziflixLogo.9cd06238.png",
-    "static/media/moviebg.1e455fa2.png": "/manzaraz.github.io/manziflix/static/media/moviebg.1e455fa2.png"
+    "main.css": "/manziflix/static/css/main.54b8ac72.chunk.css",
+    "main.js": "/manziflix/static/js/main.fc9bdb1d.chunk.js",
+    "main.js.map": "/manziflix/static/js/main.fc9bdb1d.chunk.js.map",
+    "runtime-main.js": "/manziflix/static/js/runtime-main.10d82ba4.js",
+    "runtime-main.js.map": "/manziflix/static/js/runtime-main.10d82ba4.js.map",
+    "static/js/2.3c9dee69.chunk.js": "/manziflix/static/js/2.3c9dee69.chunk.js",
+    "static/js/2.3c9dee69.chunk.js.map": "/manziflix/static/js/2.3c9dee69.chunk.js.map",
+    "index.html": "/manziflix/index.html",
+    "static/css/main.54b8ac72.chunk.css.map": "/manziflix/static/css/main.54b8ac72.chunk.css.map",
+    "static/js/2.3c9dee69.chunk.js.LICENSE.txt": "/manziflix/static/js/2.3c9dee69.chunk.js.LICENSE.txt",
+    "static/media/manziflixLogo.9cd06238.png": "/manziflix/static/media/manziflixLogo.9cd06238.png",
+    "static/media/moviebg.1e455fa2.png": "/manziflix/static/media/moviebg.1e455fa2.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.25527866.js",
-    "static/js/2.59808457.chunk.js",
+    "static/js/runtime-main.10d82ba4.js",
+    "static/js/2.3c9dee69.chunk.js",
     "static/css/main.54b8ac72.chunk.css",
     "static/js/main.fc9bdb1d.chunk.js"
   ]
