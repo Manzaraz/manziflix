@@ -79,3 +79,9 @@
     - Con axios nos conectamos a los endpoints para conectarnos al API de TMDB.
     - Creamos Requests para construir todos los endpoints para obtener la data con su API_KEY
     - Construir el componente Row
+
+### Se hizo todos los requests a la API de TheMovieDB
+
+    - con useEffect, se hicieron llamadas asíncronas mediante una funcion getMovies, la cual me devuelve un json.results, que es un array con todas las películas.
+
+### Implementacion de la pasarela de pago con

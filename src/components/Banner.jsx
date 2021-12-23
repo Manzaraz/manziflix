@@ -57,7 +57,7 @@ const Banner = () => {
       let res = await fetch(request.fetchNetflixOriginals),
         json = await res.json(),
         movies = json.results;
-      // Tenemos un array de peliculas  en movies. Generamos un número random entre 0 y la laongitud del Array, para obtener un idice aleatorio
+      // Tenemos un array de peliculas  en movies. Generamos un número random entre 0 y la longitud del Array, para obtener un idice aleatorio, para luego cargarlo con setMovie y cargarlo en el banner
       const random = Math.floor(Math.random() * movies.length - 1);
       setMovie(movies[random]);
     };

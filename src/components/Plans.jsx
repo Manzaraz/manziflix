@@ -1,4 +1,7 @@
 import { makeStyles, Typography } from "@material-ui/core";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { setPrice } from "../features/PriceSlice";
 import { FlixBtn } from "../styled/styledComponents";
 
 const useStyles = makeStyles((theme) => ({
@@ -19,9 +22,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Plans = ({ cost, children, color, wide }) => {
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
-  const handleSuscribe = (e) => {
-    console.log(`${e.target.value} manejando el botón suscribe`);
+  const handleSuscribe = (cost) => {
+    dispatch(setPrice(cost));
+    navigate("/checkout");
   };
 
   return (
@@ -29,13 +35,7 @@ const Plans = ({ cost, children, color, wide }) => {
       <Typography className={classes.standard} variant="h5">
         {children}
       </Typography>
-      <FlixBtn
-        onClick={handleSuscribe}
-        cost={cost}
-        color={color}
-        wide={wide}
-        radius
-      >
+      <FlixBtn onClick={handleSuscribe(cost)} color={color} wide={wide} radius>
         Suscribe
       </FlixBtn>
     </div>

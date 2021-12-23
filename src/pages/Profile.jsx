@@ -64,7 +64,7 @@ const Profile = () => {
           <img src={avatar} alt="avatar" />
           <div className={classes.details}>
             <div className={classes.plans}>
-              <Typography variant="h6">email usuario{}</Typography>
+              <Typography variant="h6">{auth.currentUser.email}</Typography>
               <Typography
                 variant="h5"
                 gutterBottom
