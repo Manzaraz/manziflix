@@ -9,8 +9,8 @@ import Paypal from "./pages/Paypal";
 
 import { auth } from "./firebase";
 
-import { useDispatch, useSelector } from "react-redux";
-import { login, logout, selectUser } from "./features/UserSlice";
+import { useDispatch } from "react-redux";
+import { login, logout /* selectUser */ } from "./features/UserSlice";
 import { onAuthStateChanged } from "firebase/auth";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 function App() {
   // const user = null;
-  const user = useSelector(selectUser);
+  // const user = useSelector(selectUser);
   const classes = useStyles();
   const dispatch = useDispatch();
 
