@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/manziflix/static/css/main.54b8ac72.chunk.css",
-    "main.js": "/manziflix/static/js/main.974d75df.chunk.js",
-    "main.js.map": "/manziflix/static/js/main.974d75df.chunk.js.map",
+    "main.js": "/manziflix/static/js/main.32b0e1eb.chunk.js",
+    "main.js.map": "/manziflix/static/js/main.32b0e1eb.chunk.js.map",
     "runtime-main.js": "/manziflix/static/js/runtime-main.10d82ba4.js",
     "runtime-main.js.map": "/manziflix/static/js/runtime-main.10d82ba4.js.map",
-    "static/js/2.1fe67c54.chunk.js": "/manziflix/static/js/2.1fe67c54.chunk.js",
-    "static/js/2.1fe67c54.chunk.js.map": "/manziflix/static/js/2.1fe67c54.chunk.js.map",
+    "static/js/2.68e129dd.chunk.js": "/manziflix/static/js/2.68e129dd.chunk.js",
+    "static/js/2.68e129dd.chunk.js.map": "/manziflix/static/js/2.68e129dd.chunk.js.map",
     "index.html": "/manziflix/index.html",
     "static/css/main.54b8ac72.chunk.css.map": "/manziflix/static/css/main.54b8ac72.chunk.css.map",
-    "static/js/2.1fe67c54.chunk.js.LICENSE.txt": "/manziflix/static/js/2.1fe67c54.chunk.js.LICENSE.txt",
+    "static/js/2.68e129dd.chunk.js.LICENSE.txt": "/manziflix/static/js/2.68e129dd.chunk.js.LICENSE.txt",
     "static/media/manziflixLogo.9cd06238.png": "/manziflix/static/media/manziflixLogo.9cd06238.png",
     "static/media/moviebg.1e455fa2.png": "/manziflix/static/media/moviebg.1e455fa2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.10d82ba4.js",
-    "static/js/2.1fe67c54.chunk.js",
+    "static/js/2.68e129dd.chunk.js",
     "static/css/main.54b8ac72.chunk.css",
-    "static/js/main.974d75df.chunk.js"
+    "static/js/main.32b0e1eb.chunk.js"
   ]
 }
