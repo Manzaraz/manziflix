@@ -84,4 +84,4 @@
 
     - con useEffect, se hicieron llamadas asíncronas mediante una funcion getMovies, la cual me devuelve un json.results, que es un array con todas las películas.
 
-### Implementacion de la pasarela de pago con
+### Implementacion de la pasarela de pago con Paypall

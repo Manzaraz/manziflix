@@ -14,6 +14,6 @@ export const priceSlice = createSlice({
 
 export const { setPrice } = priceSlice.actions;
 
-export const selectPrice = (state) => state.price;
+export const selectPrice = (state) => state.price.price;
 
 export default priceSlice.reducer;

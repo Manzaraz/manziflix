@@ -1,6 +1,7 @@
-import { makeStyles, Typography } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { makeStyles, Typography } from "@material-ui/core";
+
 import { setPrice } from "../features/PriceSlice";
 import { FlixBtn } from "../styled/styledComponents";
 
@@ -35,7 +36,13 @@ const Plans = ({ cost, children, color, wide }) => {
       <Typography className={classes.standard} variant="h5">
         {children}
       </Typography>
-      <FlixBtn onClick={handleSuscribe(cost)} color={color} wide={wide} radius>
+      <FlixBtn
+        onClick={() => {
+          handleSuscribe(cost);
+        }}
+        color={color}
+        wide={wide}
+      >
         Suscribe
       </FlixBtn>
     </div>
