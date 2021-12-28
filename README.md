@@ -85,3 +85,7 @@
     - con useEffect, se hicieron llamadas asíncronas mediante una funcion getMovies, la cual me devuelve un json.results, que es un array con todas las películas.
 
 ### Implementacion de la pasarela de pago con Paypall
+
+    - al componente paypal lo llamamos cuando clickeamos en uno de los botones de los planes de subscripcion. Estos botones nos redirigen a la ruta route/checkout
+    - En checkout vemos el componente Paypal, que contiene el código de React necesario para implementar la integracion de la App de react con la de Paypal.
+    -
