@@ -16,9 +16,9 @@ Manziflix está maquetada con diseño responsivo, adaptado para celulares y disp
 
 Algunas de las features, como la del chekout no estan funcionando de manera correcta en el deploy realizado en Netlify; por ello es recomendable: 
    
-   - Clonar el repositorio con el comando 'git clone https://github.com/Manzaraz/manziflix.git'
-   - Luego instalar las dependencias del proyecto ejecutando el comando 'npm i'
-   - Por último, levantar el servidor de desarrollo con la siguiente línea 'npm start'
+   - Clonar el repositorio con el comando `git clone https://github.com/Manzaraz/manziflix.git`
+   - Luego instalar las dependencias del proyecto ejecutando el comando `npm i`
+   - Por último, levantar el servidor de desarrollo con la siguiente línea `npm start`
 
 ## Features y Descripción del proyecto
 
@@ -114,4 +114,17 @@ Algunas de las features, como la del chekout no estan funcionando de manera corr
     - En checkout vemos el componente Paypal, que contiene el código de React necesario para implementar la integracion de la App de react con la de Paypal.
    
    
+   
+## Visiten mis Redes Sociales. Gracias por visitar.
+
+| Plugin | README |
+| ------ | ------ |
+| Portfolio | [https://manzaraz.github.io][PlDb] |
+| GitHub | [https://github.com/Manzaraz][PlGh] |
+| LinkedIn | [https://www.linkedin.com/feed/][PlIn] |
+| Twitter | [https://twitter.com/MagnusManz][PlTw] |
+| Instagram | [https://www.instagram.com/magnusmanz/][PlIg] |
+
+
+
    
