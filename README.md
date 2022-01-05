@@ -121,7 +121,7 @@ Algunas de las features, como la del chekout no estan funcionando de manera corr
 | ------ | ------ |
 | Portfolio | [https://manzaraz.github.io] |
 | GitHub | [https://github.com/Manzaraz] |
-| LinkedIn | [https://www.linkedin.com/feed/] |
+| LinkedIn | [https://www.linkedin.com/in/manzaraz] |
 | Twitter | [https://twitter.com/MagnusManz] |
 | Instagram | [https://www.instagram.com/magnusmanz/] |
 
