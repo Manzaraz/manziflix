@@ -119,11 +119,11 @@ Algunas de las features, como la del chekout no estan funcionando de manera corr
 
 | Plugin | README |
 | ------ | ------ |
-| Portfolio | [https://manzaraz.github.io][PlDb] |
-| GitHub | [https://github.com/Manzaraz][PlGh] |
-| LinkedIn | [https://www.linkedin.com/feed/][PlIn] |
-| Twitter | [https://twitter.com/MagnusManz][PlTw] |
-| Instagram | [https://www.instagram.com/magnusmanz/][PlIg] |
+| Portfolio | [https://manzaraz.github.io] |
+| GitHub | [https://github.com/Manzaraz] |
+| LinkedIn | [https://www.linkedin.com/feed/] |
+| Twitter | [https://twitter.com/MagnusManz] |
+| Instagram | [https://www.instagram.com/magnusmanz/] |
 
 
 
