@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCm1RxWXubC1PCV81lMoRf7iuieMJlq8HI",
-  authDomain: "manziflix-f5e86.firebaseapp.com",
-  projectId: "manziflix-f5e86",
-  storageBucket: "manziflix-f5e86.appspot.com",
-  messagingSenderId: "903626141420",
-  appId: "1:903626141420:web:25c0736e53c14a8311bfc9",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGE,
+  appId: process.env.REACT_APP_FIREBASE_APPID,
 };
 
 // Initialize Firebase
