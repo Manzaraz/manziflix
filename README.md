@@ -1,4 +1,28 @@
-## Inicializcion del proyecto:
+[![N|Solid](https://i.ibb.co/X58M6Vm/Manzi-Banner2x.png)](https://manzaraz.github.io)
+
+# Manziflix
+
+## Una version de Netflix... pero a mi manera
+
+[![N|Solid](https://i.ibb.co/3Y7kR0G/Captura-de-Pantalla-2022-01-05-a-la-s-14-42-31.png)](https://manziflix.netlify.app)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://manzaraz.github.io)
+
+Manziflix es una recreación del conocido Netflix utilizando la API de The Movie DB para obtener la data que componen la informacion necesaria para cada componente y además esta conectada al servicio de Paypal para realizar la suscripción.
+
+Manziflix está maquetada con diseño responsivo, adaptado para celulares y dispositivos de escritorio, y la sesión del usuario se guarda en el localStorage. Para la realización de este proyecto utilicé como lenguaje principal JavaScript, utilizando la librería de ReactJS para su conformación, utilizando para el maquetado css para los estilos de base y MaterialUI con Styled-Components, para darle estilos a los componentes. 
+
+### Nota al visitante, no desarrollador
+
+Algunas de las features, como la del chekout no estan funcionando de manera correcta en el deploy realizado en Netlify; por ello es recomendable: 
+   
+   - Clonar el repositorio con el comando 'git clone https://github.com/Manzaraz/manziflix.git'
+   - Luego instalar las dependencias del proyecto ejecutando el comando 'npm i'
+   - Por último, levantar el servidor de desarrollo con la siguiente línea 'npm start'
+
+## Features y Descripción del proyecto
+
+### Inicializcion del proyecto:
 
 `npx create-react-app manziflix --template redux`
 
@@ -88,4 +112,6 @@
 
     - al componente paypal lo llamamos cuando clickeamos en uno de los botones de los planes de subscripcion. Estos botones nos redirigen a la ruta route/checkout
     - En checkout vemos el componente Paypal, que contiene el código de React necesario para implementar la integracion de la App de react con la de Paypal.
-    -
+   
+   
+   
